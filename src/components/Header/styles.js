@@ -74,13 +74,33 @@ export const Logo = styled.div`
 
   .logo {
     display: flex;
-    gap: 13rem;
+
+    .ordersMobile span {
+      display: flex;
+      width: 10px;
+      font-size: 14px;
+      height: 21px;
+      padding: 10px 12px;
+      justify-content: center;
+      align-items: center;
+      margin-top: -0.8rem;
+      margin-left: -2.7rem;
+
+      border-radius: 99px;
+      background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
+    }
+    > a:nth-child(3) {
+      display: none;
+    }
 
     .bar {
       display: none;
     }
 
     @media (max-width: 768px) {
+
+      gap: 10rem;
+
       .logo-admin {
         display: flex;
         flex-direction: row;
@@ -90,6 +110,9 @@ export const Logo = styled.div`
 
       .bar {
         display: block;
+      }
+      > a:nth-child(3) {
+        display: flex;
       }
     }
   }

@@ -54,6 +54,11 @@ export function Header({ search }) {
                 <img src={logo} alt="" />
                 <h1>food explorer</h1>
               </Link>
+
+              <Link to="#" className="ordersMobile">
+              <BsReceipt size={30}/>
+              <span>0</span>
+              </Link>
             </div>
           )}
         </Logo>
