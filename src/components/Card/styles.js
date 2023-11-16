@@ -33,6 +33,7 @@ export const Content = styled.div`
     padding: 3.8rem 2.6rem;
     text-align: center;
     align-items: center;
+    justify-content: center;
 
     > img {
       width: clamp(8.8rem, 2.996rem + 9.362vw, 17.6rem);
@@ -69,6 +70,23 @@ export const Content = styled.div`
     color: ${({ theme }) => theme.COLORS.BLUE_100};
 
     margin-bottom: 1.6rem;
+  }
+
+  @media (mmax-width: 1100px) {
+      width: 28rem;
+    height: 50rem;
+  }
+  @media (max-width: 1000px) {
+      width: 26rem;
+    height: 49rem;
+  }
+  @media (max-width: 827px) {
+      width: 24rem;
+    height: 46rem;
+  }
+  @media (max-width: 696px) {
+      width: 22rem;
+    height: 45rem;
   }
 `;
 
