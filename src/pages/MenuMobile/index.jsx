@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 import { FiX, FiSearch } from "react-icons/fi";
 
-export function MenuMobile() {
+export function MenuMobile({ search }) {
   const { user } = useAuth();
   const { signOut } = useAuth();
 

@@ -99,7 +99,7 @@ export const Logo = styled.div`
 
     @media (max-width: 768px) {
 
-      gap: 10rem;
+      gap: 8rem;
 
       .logo-admin {
         display: flex;
@@ -115,6 +115,7 @@ export const Logo = styled.div`
         display: flex;
       }
     }
+
   }
 
   h1 {
